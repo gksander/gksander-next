@@ -21,6 +21,7 @@ import CosmaImg3 from "../assets/img/projects/cosma-3.jpg";
 // MathCode
 import MathCodeImg1 from "../assets/img/projects/mathcode-1.jpg";
 import MathCodeImg2 from "../assets/img/projects/mathcode-2.jpg";
+import ProjectImageCarousel from "./ProjectImageCarousel";
 
 // Projects interface
 interface IProject {
@@ -35,7 +36,7 @@ interface IProject {
 }
 
 /**
- * H TODO: Projects
+ * Project info
  */
 const GksProjects: React.FC = () => {
   // Projects
@@ -182,7 +183,9 @@ const GksProjects: React.FC = () => {
             />
           </div>
           <div className="px-2 w-full sm:w-5/12">
-            <div>PROJECT IMAGES</div>
+            <ProjectImageCarousel
+              images={project.images.map(img => img.image)}
+            />
           </div>
         </div>
       ))}
