@@ -1,5 +1,6 @@
 import React from "react";
 import Headshot from "../assets/img/headshot.jpg";
+import { motion } from "framer-motion";
 
 // Interface
 interface ILink {
@@ -58,13 +59,20 @@ const GksTitle: React.FC = () => {
         <div className="flex flex-row flex-wrap justify-around px-3 py-2 overflow-x-auto -mx-1 shadow-lg border rounded-lg bg-white">
           {links.map(link => (
             <div key={link.to} className="p-1 w-1/2 sm:w-1/5">
-              <button
+              <motion.button
                 className="px-3 py-1 cursor-pointer text-center w-full border rounded text-primary-900 border-primary-900 overflow-hidden hover:bg-primary-800 hover:text-white hover:shadow-md select-none focus:shadow-none"
                 style={{ textOverflow: "ellipsis" }}
                 onClick={() => onLinkClick(link)}
+                whileHover={{
+                  scale: 1.1,
+                }}
+                whileTap={{
+                  scale: 1,
+                  borderRadius: "50%",
+                }}
               >
                 {link.title}
-              </button>
+              </motion.button>
             </div>
           ))}
         </div>

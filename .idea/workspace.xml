@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/GksTitle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GksTitle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProjectImageCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectImageCarousel.tsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.export" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.export" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -94,7 +96,7 @@
       <updated>1576889823656</updated>
       <workItem from="1576889826448" duration="7100000" />
       <workItem from="1576934782859" duration="4967000" />
-      <workItem from="1576941645125" duration="1442000" />
+      <workItem from="1576941645125" duration="1959000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1576891624888</created>
@@ -131,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576943485238</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Change test...">
+      <created>1576943720007</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576943720007</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +165,7 @@
     <MESSAGE value="Carousel start" />
     <MESSAGE value="Carousel animations" />
     <MESSAGE value="Finish up first-draft" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish up first-draft" />
+    <MESSAGE value="Change test..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change test..." />
   </component>
 </project>

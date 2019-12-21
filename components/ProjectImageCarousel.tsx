@@ -84,6 +84,8 @@ const ProjectImageCarousel: React.FC<{
               }}
               whileTap={{
                 scale: 1,
+                borderRadius: "50%",
+                rotate: 12,
               }}
               onClick={() => onThumbnailClick(i)}
             />
@@ -117,18 +119,18 @@ const ProjectImageCarousel: React.FC<{
                     x: { type: "spring", stiffness: 300, damping: 200 },
                     opacity: { duration: 0.2 },
                   }}
-                  drag="x"
-                  dragConstraints={{ left: 0, right: 0 }}
-                  dragElastic={1}
-                  onDragEnd={(e, { offset, velocity }) => {
-                    const swipe = swipePower(offset.x, velocity.x);
-
-                    if (swipe < -swipeConfidenceThreshold) {
-                      paginate(1);
-                    } else if (swipe > swipeConfidenceThreshold) {
-                      paginate(-1);
-                    }
-                  }}
+                  // drag="x"
+                  // dragConstraints={{ left: 0, right: 0 }}
+                  // dragElastic={1}
+                  // onDragEnd={(e, { offset, velocity }) => {
+                  //   const swipe = swipePower(offset.x, velocity.x);
+                  //
+                  //   if (swipe < -swipeConfidenceThreshold) {
+                  //     paginate(1);
+                  //   } else if (swipe > swipeConfidenceThreshold) {
+                  //     paginate(-1);
+                  //   }
+                  // }}
                 />
               </AnimatePresence>
             </div>
