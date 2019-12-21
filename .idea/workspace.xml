@@ -1,59 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/angular.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/asu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/devto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/esnext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/gmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/graphql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/headshot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/html.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/jsx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/mongodb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/mountain-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/mysql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/nginx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/node.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/nuxt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/pgsql.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/php.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/artisanhd-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/artisanhd-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/artisanhd-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/artisanhd-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/cosma-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/cosma-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/cosma-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/eulogybooks-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/eulogybooks-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/eulogybooks-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/mathcode-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/mathcode-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/pokedex-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/pokedex-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/projects/pokedex-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/rails.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/react.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/redux.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/sass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/tailwind.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/ts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/twitter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/vue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/vuetify.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/GksTitle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prettier.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shim.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
+    <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="Base">
+      <change afterPath="$PROJECT_DIR$/components/GksBackground.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GksContact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GksEducation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GksExperience.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GksProjects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GksSectionTitle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/GksTools.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/nav.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,8 +103,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576889823656</updated>
-      <workItem from="1576889826448" duration="1712000" />
+      <workItem from="1576889826448" duration="5051000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1576891624888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576891624888</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,5 +128,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
 </project>
