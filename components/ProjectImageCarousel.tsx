@@ -1,6 +1,24 @@
 import React, { useState } from "react";
 import classNames from "classnames";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
+// Motion variants
+const variants = {
+  enter: (direction: number) => ({
+    x: direction > 0 ? 500 : -500,
+    opacity: 0,
+  }),
+  center: {
+    zIndex: 1,
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction: number) => ({
+    zIndex: 0,
+    x: direction < 0 ? 500 : -500,
+    opacity: 0,
+  }),
+};
 
 /**
  * Carousel for project images
@@ -43,26 +61,37 @@ const ProjectImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
       onClick={() => setEnlarged(false)}
     >
       <div
-        className="flex justify-center mb-3 relative"
+        className="flex justify-center mb-3 relative border rounded-lg w-full"
         style={{ paddingBottom: "100%" }}
       >
-        {/* Image */}
-        <div
-          className="absolute inset-0 cursor-pointer border rounded-lg w-full"
-          style={{
-            backgroundImage: `url(${images[imgIndex]})`,
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-          onClick={e => {
-            e.stopPropagation();
-            setEnlarged(true);
-          }}
-        />
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Image */}
+          <AnimatePresence initial={false} custom={direction}>
+            <motion.div
+              key={currIndex}
+              className="absolute inset-0 cursor-pointer"
+              style={{
+                backgroundImage: `url(${images[imgIndex]})`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+              custom={direction}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              transition={{
+                x: { type: "spring", stiffness: 300, damping: 200 },
+                opacity: { duration: 0.2 },
+              }}
+            />
+          </AnimatePresence>
+        </div>
+
         {/* Left button */}
         <motion.button
-          className="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900"
+          className="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900 z-10"
           style={{
             width: `${buttonSize}px`,
             height: `${buttonSize}px`,
@@ -74,7 +103,7 @@ const ProjectImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
             scale: 1.1,
           }}
           whileTap={{
-            x: -5,
+            x: 5,
           }}
           onClick={() => paginate(-1)}
         >
@@ -97,7 +126,7 @@ const ProjectImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
 
         {/*  Right icon */}
         <motion.button
-          className="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900"
+          className="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900 z-10"
           style={{
             width: `${buttonSize}px`,
             height: `${buttonSize}px`,
@@ -109,7 +138,7 @@ const ProjectImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
             scale: 1.1,
           }}
           whileTap={{
-            x: 5,
+            x: -5,
           }}
           onClick={() => paginate(1)}
         >

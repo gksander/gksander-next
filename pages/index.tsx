@@ -8,6 +8,7 @@ import GksTools from "../components/GksTools";
 import GksProjects from "../components/GksProjects";
 import GksEducation from "../components/GksEducation";
 import GksContact from "../components/GksContact";
+// import "typeface-raleway";
 
 /**
  * Home page (in our case, only page)
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>Grant Sander</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-gray-200 overflow-hidden">
