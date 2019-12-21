@@ -58,11 +58,7 @@ const GksContact: React.FC = () => {
    */
   return (
     <div className="p-5">
-      <GksSectionTitle
-        title="Projects"
-        subtitle="Some projects I've worked on."
-        id="projects"
-      />
+      <GksSectionTitle title="Contact" subtitle="Get in touch!" id="contact" />
       {links.map((link, i) => (
         <div
           key={link.title}

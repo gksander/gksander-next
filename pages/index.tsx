@@ -19,6 +19,8 @@ const Home: React.FC = () => {
       <Head>
         <title>Grant Sander</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta lang="en" />
+        <meta name="description" content="Grant Sander's Portfolio site" />
       </Head>
       <div className="bg-gray-200 overflow-hidden">
         <div className="sm:p-10">

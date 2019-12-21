@@ -22,9 +22,10 @@ import CosmaImg3 from "../assets/img/projects/cosma-3.jpg";
 import MathCodeImg1 from "../assets/img/projects/mathcode-1.jpg";
 import MathCodeImg2 from "../assets/img/projects/mathcode-2.jpg";
 import ProjectImageCarousel from "./ProjectImageCarousel";
+import GksProjectRow from "./GksProjectRow";
 
 // Projects interface
-interface IProject {
+export interface IProject {
   title: string;
   subtitle: string;
   description: string;
@@ -159,35 +160,11 @@ const GksProjects: React.FC = () => {
         id="projects"
       />
       {projects.map((project, i) => (
-        <div
+        <GksProjectRow
+          project={project}
+          isLast={i === projects.length - 1}
           key={project.title}
-          className={classNames("flex flex-row flex-wrap -mx-2", {
-            "mb-6": i !== projects.length - 1,
-          })}
-        >
-          <div className="px-2 w-full sm:w-7/12">
-            <a
-              className="font-bold text-primary-900 leading-tight cursor-pointer hover:underline"
-              href={project.href}
-              target="_blank"
-              rel="noopener"
-            >
-              {project.title}
-            </a>
-            <div className="text-primary-800 leading-tight mb-2">
-              {project.subtitle}
-            </div>
-            <div
-              className="text-gray-700 mb-2"
-              dangerouslySetInnerHTML={{ __html: project.description }}
-            />
-          </div>
-          <div className="px-2 w-full sm:w-5/12">
-            <ProjectImageCarousel
-              images={project.images.map(img => img.image)}
-            />
-          </div>
-        </div>
+        />
       ))}
     </div>
   );

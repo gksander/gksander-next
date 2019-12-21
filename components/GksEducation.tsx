@@ -37,9 +37,9 @@ const GksEducation: React.FC = () => {
   return (
     <div className="p-5">
       <GksSectionTitle
-        title="Projects"
-        subtitle="Some projects I've worked on."
-        id="projects"
+        title="Education"
+        subtitle="My educational background."
+        id="education"
       />
       {degrees.map((degree, i) => (
         <div

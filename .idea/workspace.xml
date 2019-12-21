@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="Carousel start">
+    <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/GksProjectRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/_document.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/GksContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GksContact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/GksEducation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GksEducation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/GksProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/GksProjects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ProjectImageCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProjectImageCarousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +27,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -81,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.export" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
@@ -98,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1576889823656</updated>
       <workItem from="1576889826448" duration="7100000" />
-      <workItem from="1576934782859" duration="1414000" />
+      <workItem from="1576934782859" duration="4967000" />
+      <workItem from="1576941645125" duration="1281000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1576891624888</created>
@@ -121,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576897513428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Carousel animations">
+      <created>1576937400210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576937400210</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +156,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Everything but projects" />
     <MESSAGE value="Carousel start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carousel start" />
+    <MESSAGE value="Carousel animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Carousel animations" />
   </component>
 </project>

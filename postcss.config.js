@@ -1,12 +1,14 @@
 const purgecss = require("@fullhuman/postcss-purgecss")({
   // Specify the paths to all of the template files in your project
   content: [
-    "./pages/**/*.tsx",
-    "./components/**/*.tsx",
+    "./pages/*.tsx",
+    "./components/*.tsx",
     // etc.
   ],
 
-  // Include any special characters you're using in this regular expression
+  whitelist: ["svg:not(:root).svg-inline--fa"],
+  whitelistPatterns: [/^fa-/, /^svg-inline--fa/],
+  whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
   defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
 });
 

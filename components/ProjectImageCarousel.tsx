@@ -23,15 +23,15 @@ const variants = {
 /**
  * Carousel for project images
  */
-const ProjectImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
+const ProjectImageCarousel: React.FC<{
+  images: string[];
+}> = ({ images }) => {
   // Local state
-  const [enlarged, setEnlarged] = useState<boolean>(false);
   const [direction, setDirection] = useState<0 | -1 | 1>(0);
   const [currIndex, setCurrIndex] = useState<number>(0);
 
   // Sizing/index
-  const arrowSize = enlarged ? 24 : 18;
-  const buttonSize = enlarged ? 48 : 36;
+  const arrowSize = 18;
   const n = images.length;
   const imgIndex = ((currIndex % n) + n) % n;
 
@@ -41,126 +41,175 @@ const ProjectImageCarousel: React.FC<{ images: string[] }> = ({ images }) => {
     setCurrIndex(oldIndex => oldIndex + dir);
   };
 
+  const onThumbnailClick = (i: number) => {
+    setDirection(i < imgIndex ? -1 : 1);
+    setCurrIndex(i);
+  };
+
   return (
-    <motion.div
-      className={classNames(
-        enlarged
-          ? [
-              "fixed",
-              "inset-0",
-              "flex",
-              "flex-col",
-              "bg-owhite",
-              "items-center",
-              "justify-center",
-              "z-10",
-              "px-8",
-            ]
-          : ["px-2"]
-      )}
-      onClick={() => setEnlarged(false)}
-    >
+    <div className="flex flex-wrap -mx-2">
+      {/* Thumbnail */}
       <div
-        className="flex justify-center mb-3 relative border rounded-lg w-full"
-        style={{ paddingBottom: "100%" }}
+        className={classNames([
+          "p-2",
+          "w-full",
+          "sm:w-1/6",
+          "order-1",
+          "sm:order-0",
+          "flex",
+          // Small screens
+          "-mx-1",
+          // Larger screens
+          "sm:-my-1",
+          "sm:flex-col",
+        ])}
       >
-        <div className="absolute inset-0 overflow-hidden">
-          {/* Image */}
-          <AnimatePresence initial={false} custom={direction}>
+        {images.map((img, i) => (
+          <div key={img} className="w-1/4 sm:w-full px-1 sm:py-1">
             <motion.div
-              key={currIndex}
-              className="absolute inset-0 cursor-pointer"
+              className={classNames("w-full rounded cursor-pointer", {
+                border: i !== imgIndex,
+                "border-2": i === imgIndex,
+                "border-primary-800": i === imgIndex,
+              })}
               style={{
-                backgroundImage: `url(${images[imgIndex]})`,
+                paddingBottom: "100%",
+                backgroundImage: `url(${img})`,
                 backgroundSize: "contain",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
               }}
-              custom={direction}
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{
-                x: { type: "spring", stiffness: 300, damping: 200 },
-                opacity: { duration: 0.2 },
+              whileHover={{
+                scale: 1.05,
               }}
+              whileTap={{
+                scale: 1,
+              }}
+              onClick={() => onThumbnailClick(i)}
             />
-          </AnimatePresence>
-        </div>
-
-        {/* Left button */}
-        <motion.button
-          className="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900 z-10"
-          style={{
-            width: `${buttonSize}px`,
-            height: `${buttonSize}px`,
-            left: `${-buttonSize / 2}px`,
-            top: "50%",
-            marginTop: `${-buttonSize / 2}px`,
-          }}
-          whileHover={{
-            scale: 1.1,
-          }}
-          whileTap={{
-            x: 5,
-          }}
-          onClick={() => paginate(-1)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={arrowSize}
-            height={arrowSize}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="feather feather-arrow-left"
-          >
-            <line x1="19" y1="12" x2="5" y2="12" />
-            <polyline points="12 19 5 12 12 5" />
-          </svg>
-        </motion.button>
-
-        {/*  Right icon */}
-        <motion.button
-          className="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900 z-10"
-          style={{
-            width: `${buttonSize}px`,
-            height: `${buttonSize}px`,
-            right: `${-buttonSize / 2}px`,
-            top: "50%",
-            marginTop: `${-buttonSize / 2}px`,
-          }}
-          whileHover={{
-            scale: 1.1,
-          }}
-          whileTap={{
-            x: -5,
-          }}
-          onClick={() => paginate(1)}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width={arrowSize}
-            height={arrowSize}
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="feather feather-arrow-left"
-          >
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </motion.button>
+          </div>
+        ))}
       </div>
-    </motion.div>
+      <div className="p-2 w-full sm:w-5/6 order-0 sm:order-1">
+        <motion.div>
+          <div
+            className="flex justify-center mb-3 relative border rounded-lg w-full"
+            style={{ paddingBottom: "66%" }}
+          >
+            <div className="absolute inset-0 overflow-hidden">
+              {/* Image */}
+              <AnimatePresence initial={false} custom={direction}>
+                <motion.div
+                  key={currIndex}
+                  className="absolute inset-0"
+                  style={{
+                    backgroundImage: `url(${images[imgIndex]})`,
+                    backgroundSize: "contain",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                  custom={direction}
+                  variants={variants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{
+                    x: { type: "spring", stiffness: 300, damping: 200 },
+                    opacity: { duration: 0.2 },
+                  }}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={1}
+                  onDragEnd={(e, { offset, velocity }) => {
+                    const swipe = swipePower(offset.x, velocity.x);
+
+                    if (swipe < -swipeConfidenceThreshold) {
+                      paginate(1);
+                    } else if (swipe > swipeConfidenceThreshold) {
+                      paginate(-1);
+                    }
+                  }}
+                />
+              </AnimatePresence>
+            </div>
+
+            {/* Left button */}
+            <div className="absolute inset-y-0 left-0 flex justify-center items-center px-1">
+              <motion.button
+                className="flex justify-center items-center border bg-white rounded-full hover:shadow-lg text-primary-900 z-10 w-10 h-10"
+                whileHover={{
+                  scale: 1.2,
+                }}
+                whileTap={{
+                  x: 5,
+                }}
+                onClick={() => paginate(-1)}
+                aria-label="Previous"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={arrowSize}
+                  height={arrowSize}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-arrow-left"
+                >
+                  <line x1="19" y1="12" x2="5" y2="12" />
+                  <polyline points="12 19 5 12 12 5" />
+                </svg>
+              </motion.button>
+            </div>
+
+            {/*  Right icon */}
+            <div className="absolute inset-y-0 right-0 flex justify-center items-center px-1">
+              <motion.button
+                className="flex justify-center items-center border bg-white rounded-full hover:shadow-lg text-primary-900 z-10 w-10 h-10"
+                whileHover={{
+                  scale: 1.2,
+                }}
+                whileTap={{
+                  x: -5,
+                }}
+                onClick={() => paginate(1)}
+                aria-label="Next"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={arrowSize}
+                  height={arrowSize}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-arrow-left"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </motion.button>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </div>
   );
 };
 
 export default ProjectImageCarousel;
+
+/**
+ * Experimenting with distilling swipe offset and velocity into a single variable, so the
+ * less distance a user has swiped, the more velocity they need to register as a swipe.
+ * Should accomodate longer swipes and short flicks without having binary checks on
+ * just distance thresholds and velocity > 0.
+ */
+const swipeConfidenceThreshold = 10000;
+const swipePower = (offset: number, velocity: number) => {
+  return Math.abs(offset) * velocity;
+};
