@@ -6,10 +6,10 @@ import HDImage2 from "../assets/img/projects/artisanhd-2.jpg";
 import HDImage3 from "../assets/img/projects/artisanhd-3.jpg";
 import HDImage4 from "../assets/img/projects/artisanhd-4.jpg";
 // Pokedex
-import PokedexImg1 from "../assets/img/projects/pokedex-1.png";
-import PokedexImg2 from "../assets/img/projects/pokedex-2.png";
-import PokedexImg3 from "../assets/img/projects/pokedex-3.png";
-import PokedexImg4 from "../assets/img/projects/pokedex-4.png";
+import PokedexImg1 from "../assets/img/projects/pokedex-1.jpg";
+import PokedexImg2 from "../assets/img/projects/pokedex-2.jpg";
+import PokedexImg3 from "../assets/img/projects/pokedex-3.jpg";
+import PokedexImg4 from "../assets/img/projects/pokedex-4.jpg";
 // Eulogybooks
 import EbImg1 from "../assets/img/projects/eulogybooks-1.jpg";
 import EbImg2 from "../assets/img/projects/eulogybooks-2.jpg";
