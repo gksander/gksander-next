@@ -85,7 +85,7 @@ const ProjectImageCarousel: React.FC<{
               whileTap={{
                 scale: 1,
                 borderRadius: "50%",
-                rotate: 12,
+                rotate: 4,
               }}
               onClick={() => onThumbnailClick(i)}
             />

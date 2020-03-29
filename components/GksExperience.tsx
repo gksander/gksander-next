@@ -16,9 +16,14 @@ const GksExperience: React.FC = () => {
   // Experiences
   const experiences: IExperience[] = [
     {
+      title: "Senior Software Engineer @ Synapse Studios",
+      description: `Full-stack web and mobile development using React, React Native, and Node.js.`,
+      time: `Jan. 2020 &ndash; Current`
+    },
+    {
       title: "Senior Software Engineer @ Henri Home",
       description: `Full-stack web and mobile development using React Native, Vue.JS, and Ruby on Rails.`,
-      time: `Sept. 2019 &ndash; Current`,
+      time: `Sept. 2019 &ndash; Jan. 2020`,
     },
     {
       title: `Software Engineer @ Artisan Colour`,

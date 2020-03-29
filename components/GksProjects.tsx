@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from "classnames";
 import GksSectionTitle from "./GksSectionTitle";
 // Images
 import HDImage1 from "../assets/img/projects/artisanhd-1.jpg";
@@ -10,6 +9,7 @@ import HDImage4 from "../assets/img/projects/artisanhd-4.jpg";
 import PokedexImg1 from "../assets/img/projects/pokedex-1.png";
 import PokedexImg2 from "../assets/img/projects/pokedex-2.png";
 import PokedexImg3 from "../assets/img/projects/pokedex-3.png";
+import PokedexImg4 from "../assets/img/projects/pokedex-4.png";
 // Eulogybooks
 import EbImg1 from "../assets/img/projects/eulogybooks-1.jpg";
 import EbImg2 from "../assets/img/projects/eulogybooks-2.jpg";
@@ -71,7 +71,7 @@ const GksProjects: React.FC = () => {
     {
       title: "Personal PokeDex",
       subtitle: `Static site with over 700 optimized pages.`,
-      description: `Side project using Gridsome.js to generate a static site full of Pokemon information. Parses Pokemon data from CSV into a GraphQL data layer and generates highly-optimized pages for each.`,
+      description: `Side project using Gridsome.js to generate a static site full of Pokemon information. Parses Pokemon data from CSV into a GraphQL data layer and generates highly-optimized pages for each. Pulls colors from each monster to generate gradient backgrounds.`,
       href: `https://pokedex.gksander.com`,
       images: [
         {
@@ -80,12 +80,16 @@ const GksProjects: React.FC = () => {
         },
         {
           image: PokedexImg2,
-          alt: "Pokemon page",
+          alt: "Pokemon homepage, light version",
         },
         {
           image: PokedexImg3,
-          alt: "Alt 3...",
+          alt: "Pokemon detail",
         },
+        {
+          image: PokedexImg4,
+          alt: "Pokemon Type details"
+        }
       ],
     },
     // Eulogybooks
