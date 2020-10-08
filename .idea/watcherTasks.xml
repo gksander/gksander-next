@@ -4,7 +4,6 @@
     <enabled-global>
       <option value="Prettier TSX" />
       <option value="Prettier TS" />
-      <option value="Prettier JS" />
     </enabled-global>
   </component>
 </project>
