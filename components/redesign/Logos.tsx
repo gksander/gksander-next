@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const FILL_CLASS = "fill-gray-500";
+const FILL_CLASS = "fill-gray-400";
 
 export const TsLogo: React.FC = () => {
   return (

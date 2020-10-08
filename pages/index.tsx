@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         <meta lang="en" />
         <meta name="description" content="Grant Sander's Portfolio site" />
       </Head>
-      <div className="bg-gray-300">
+      <div className="bg-gray-200">
         {/* Page contents */}
         {/*<RedesignHeader />*/}
         <RedesignHero />
