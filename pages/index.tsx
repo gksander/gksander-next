@@ -8,6 +8,7 @@ import { RedesignExperience } from "../components/redesign/RedesignExperience";
 import { RedesignProjects } from "../components/redesign/RedesignProjects";
 // FONTS
 import "fontsource-sansita-swashed";
+import "fontsource-sansita-swashed/300.css";
 import "fontsource-montserrat";
 import "fontsource-montserrat/700.css";
 
@@ -23,7 +24,7 @@ const Home: React.FC = () => {
         <meta lang="en" />
         <meta name="description" content="Grant Sander's Portfolio site" />
       </Head>
-      <div className="bg-gray-100">
+      <div className="bg-gray-300">
         {/* Page contents */}
         {/*<RedesignHeader />*/}
         <RedesignHero />

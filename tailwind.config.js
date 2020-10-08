@@ -18,6 +18,7 @@ module.exports = {
     },
     fill: theme => ({
       primary: theme("colors.primary"),
+      gray: theme("colors.gray"),
     }),
   },
   variants: {},

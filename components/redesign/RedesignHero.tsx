@@ -9,7 +9,7 @@ export const RedesignHero: React.FC = () => {
         <div>Contact</div>
       </div>
       {/* Hero container */}
-      <div className="container grid grid-cols-1 sm:grid-cols-3 gap-2 px-2 pt-4 pb-8">
+      <div className="container grid grid-cols-1 sm:grid-cols-3 gap-2 px-2 pt-4 pb-12">
         <div className="col-span-1 sm:col-span-2">
           <div className="text-3xl leading-8 font-fancy">
             Dedicated to using computers and problem solving to build things
