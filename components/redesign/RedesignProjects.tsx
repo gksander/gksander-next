@@ -54,7 +54,7 @@ export const RedesignProjects: React.FC = () => {
     <div>
       <div className="container max-w-5xl px-2 py-4">
         <div className="text-5xl font-thin font-fancy">Projects</div>
-        <div>
+        <div className="text-gray-600">
           Here are some projects I've worked on either professionally or
           casually.
         </div>

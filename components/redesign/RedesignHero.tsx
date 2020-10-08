@@ -1,21 +1,27 @@
 import * as React from "react";
+import "./RedesignHero.module.css";
+import { HeartIcon } from "./HeartIcon";
 
 export const RedesignHero: React.FC = () => {
   return (
-    <div>
+    <div className="hero">
       {/* Header */}
       <div className="container max-w-5xl p-2 flex justify-between items-center">
         <div className="text-2xl font-bold">Grant Sander</div>
-        <a className="block text-gray-700 rounded px-2 py-1 cursor-pointer hover:bg-gray-300 hover:text-primary-700 transition-colors duration-200">
-          Contact
+        <a
+          className="flex gap-x-2 text-gray-700 rounded px-2 py-1 cursor-pointer hover:bg-gray-300 hover:text-primary-700 transition-colors duration-200"
+          href="#getintouch"
+        >
+          <HeartIcon width={12} />
+          Follow me
         </a>
       </div>
       {/* Hero container */}
       <div className="container max-w-5xl grid grid-cols-1 sm:grid-cols-3 gap-2 px-2 pt-4 items-end">
         <div className="col-span-1 sm:col-span-2 pb-4">
           <div className="text-3xl leading-8 font-fancy">
-            Dedicated to using computers and problem solving to build things
-            that make lives better.
+            I like using computers and problem solving to build things that make
+            lives better.
           </div>
           <div className="mb-4" />
           <div className="text-gray-600 leading-5">
@@ -38,8 +44,7 @@ export const RedesignHero: React.FC = () => {
           <img
             src={require("../../assets/img/headshot-transparent.png")}
             alt="Headshot of Grant"
-            style={{ filter: `grayscale(1)` }}
-            className="w-1/2 sm:w-full"
+            className="w-1/2 sm:w-full headshot transition-all duration-300"
           />
         </div>
       </div>

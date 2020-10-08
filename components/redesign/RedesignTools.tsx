@@ -64,7 +64,7 @@ export const RedesignTools: React.FC = () => {
               return (
                 <div key={tool.title} style={{ transform: `scale(${scale})` }}>
                   <div className="relative" style={{ paddingBottom: "100%" }}>
-                    <div className="absolute inset-0 rounded-lg shadow-lg overflow-hidden">
+                    <div className="absolute inset-0 rounded-lg shadow-lg overflow-hidden floating">
                       <tool.Component />
                     </div>
                   </div>
