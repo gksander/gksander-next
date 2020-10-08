@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/redesign/HeartIcon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/redesign/RedesignHero.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/redesign/HeartIcon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/redesign/HeartIcon.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/redesign/RedesignContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/redesign/RedesignContact.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/redesign/RedesignHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/redesign/RedesignHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/redesign/RedesignProjects.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/redesign/RedesignProjects.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/redesign/RedesignTools.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/redesign/RedesignTools.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +113,7 @@
       <workItem from="1602119054357" duration="12097000" />
       <workItem from="1602167711384" duration="4241000" />
       <workItem from="1602182975082" duration="368000" />
-      <workItem from="1602184806441" duration="2915000" />
+      <workItem from="1602184806441" duration="3586000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1576891624888</created>
@@ -220,10 +217,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="150" y="310" width="648" height="522" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1602156805388" />
-    <state x="1077" y="339" width="1287" height="874" key="search.everywhere.popup" timestamp="1602189124619">
+    <state x="1077" y="339" width="1287" height="874" key="search.everywhere.popup" timestamp="1602190809414">
       <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1602159862448" />
-    <state x="1077" y="339" width="1287" height="874" key="search.everywhere.popup/0.23.3440.1417/-1792.136.1792.1097@0.23.3440.1417" timestamp="1602189124619" />
+    <state x="1077" y="339" width="1287" height="874" key="search.everywhere.popup/0.23.3440.1417/-1792.136.1792.1097@0.23.3440.1417" timestamp="1602190809414" />
   </component>
 </project>

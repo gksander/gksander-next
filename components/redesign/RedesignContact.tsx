@@ -18,7 +18,7 @@ export const RedesignContact: React.FC = () => {
         <div className="text-5xl font-thin font-fancy">Get in Touch!</div>
         <div className="text-gray-600">Want to share ideas? Hit me up!</div>
         <div className="mb-4" />
-        <ul className="text-gray-600 list-disc">
+        <ul className="text-gray-600 list-disc ml-6">
           <li>
             Email me at{" "}
             <Link href="mailto:gksander93@gmail.com">gksander93@gmail.com</Link>

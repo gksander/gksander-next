@@ -51,7 +51,7 @@ export const RedesignTools: React.FC = () => {
         </div>
         <div className="mb-6" />
         <div className="w-full flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 w-1/2 sm:w-full max-w-3xl">
+          <div className="grid grid-cols-5 gap-3 w-full max-w-3xl">
             {tools.map((tool, i) => {
               const scale = {
                 0: 0.7,
@@ -69,7 +69,7 @@ export const RedesignTools: React.FC = () => {
                     </div>
                   </div>
                   <div className="mb-2" />
-                  <div className="font-bold text-gray-700 text-center">
+                  <div className="font-bold text-gray-700 text-center hidden sm:block">
                     {tool.title}
                   </div>
                 </div>

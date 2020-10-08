@@ -9,11 +9,12 @@ export const HeartIcon: React.FC<{ width?: number | string }> = ({
       focusable="false"
       data-prefix="fas"
       data-icon="heart"
-      className="svg-inline--fa fa-heart fa-w-16"
+      className="h-auto"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
       width={width}
+      height={width}
     >
       <path
         fill="currentColor"
