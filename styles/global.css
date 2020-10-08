@@ -10,5 +10,9 @@ body, html {
   margin: 0;
 }
 html {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', serif;
+}
+
+.font-fancy {
+  font-family: 'Sansita Swashed', sans-serif;
 }

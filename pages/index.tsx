@@ -1,14 +1,15 @@
 import React from "react";
 import Head from "next/head";
 import "../styles/global.css";
-import GksTitle from "../components/GksTitle";
-import GksBackground from "../components/GksBackground";
-import GksExperience from "../components/GksExperience";
-import GksTools from "../components/GksTools";
-import GksProjects from "../components/GksProjects";
-import GksEducation from "../components/GksEducation";
-import GksContact from "../components/GksContact";
-// import "typeface-raleway";
+import { RedesignContact } from "../components/redesign/RedesignContact";
+import { RedesignHero } from "../components/redesign/RedesignHero";
+import { RedesignTools } from "../components/redesign/RedesignTools";
+import { RedesignExperience } from "../components/redesign/RedesignExperience";
+import { RedesignProjects } from "../components/redesign/RedesignProjects";
+// FONTS
+import "fontsource-sansita-swashed";
+import "fontsource-montserrat";
+import "fontsource-montserrat/700.css";
 
 /**
  * Home page (in our case, only page)
@@ -22,19 +23,14 @@ const Home: React.FC = () => {
         <meta lang="en" />
         <meta name="description" content="Grant Sander's Portfolio site" />
       </Head>
-      <div className="bg-gray-200 overflow-hidden">
-        <div className="sm:p-10">
-          <div className="bg-white max-w-2xl mx-auto shadow-2xl">
-            {/* Page contents */}
-            <GksTitle />
-            <GksBackground />
-            <GksExperience />
-            <GksTools />
-            <GksProjects />
-            <GksEducation />
-            <GksContact />
-          </div>
-        </div>
+      <div className="bg-gray-100">
+        {/* Page contents */}
+        {/*<RedesignHeader />*/}
+        <RedesignHero />
+        <RedesignExperience />
+        <RedesignTools />
+        <RedesignProjects />
+        <RedesignContact />
       </div>
     </div>
   );

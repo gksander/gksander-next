@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/redesign/RedesignContact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/redesign/RedesignExperience.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/redesign/RedesignHeader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/redesign/RedesignHero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/redesign/RedesignProjects.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/redesign/RedesignTools.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -16,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1VGqY3M0G5TSDPzWg2rNOdsJXBe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -38,10 +47,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -104,7 +117,7 @@
       <workItem from="1585572758520" duration="10000" />
       <workItem from="1590074205239" duration="1422000" />
       <workItem from="1590444314279" duration="104000" />
-      <workItem from="1602119054357" duration="268000" />
+      <workItem from="1602119054357" duration="8217000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1576891624888</created>
@@ -200,9 +213,17 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state width="1771" height="298" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1602119251880" />
-    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1602119247408">
+    <state x="374" y="210" key="SettingsEditor" timestamp="1602119902594">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1602119247408" />
+    <state x="374" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1602119902594" />
+    <state x="150" y="310" width="648" height="522" key="find.popup" timestamp="1602156805388">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="150" y="310" width="648" height="522" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1602156805388" />
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1602159862448">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="561" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1602159862448" />
   </component>
 </project>

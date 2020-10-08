@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          ...colors.blue,
+          ...colors.red,
         },
         owhite: {
           default: "rgba(255,255,255, 0.95)",
@@ -22,7 +22,5 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-  purge: [
-    './**/*.tsx'
-  ]
+  purge: ["./**/*.tsx"],
 };
