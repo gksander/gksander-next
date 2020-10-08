@@ -44,7 +44,7 @@ const experiences: IExperience[] = [
 export const RedesignExperience: React.FC = () => {
   return (
     <div className="bg-gray-300">
-      <div className="container px-2 py-4">
+      <div className="container max-w-5xl px-2 py-4">
         <div className="text-5xl font-thin font-fancy">Experience</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
           {experiences.map((exp, i) => (

@@ -4,13 +4,15 @@ export const RedesignHero: React.FC = () => {
   return (
     <div>
       {/* Header */}
-      <div className="container p-2 flex justify-between">
+      <div className="container max-w-5xl p-2 flex justify-between items-center">
         <div className="text-2xl font-bold">Grant Sander</div>
-        <div>Contact</div>
+        <a className="block text-gray-700 rounded px-2 py-1 cursor-pointer hover:bg-gray-300 hover:text-primary-700 transition-colors duration-200">
+          Contact
+        </a>
       </div>
       {/* Hero container */}
-      <div className="container grid grid-cols-1 sm:grid-cols-3 gap-2 px-2 py-4">
-        <div className="col-span-1 sm:col-span-2">
+      <div className="container max-w-5xl grid grid-cols-1 sm:grid-cols-3 gap-2 px-2 pt-4 items-end">
+        <div className="col-span-1 sm:col-span-2 pb-4">
           <div className="text-3xl leading-8 font-fancy">
             Dedicated to using computers and problem solving to build things
             that make lives better.
@@ -32,7 +34,14 @@ export const RedesignHero: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="grid-cols-1">Photo...</div>
+        <div className="grid-cols-1 flex justify-center">
+          <img
+            src={require("../../assets/img/headshot-transparent.png")}
+            alt="Headshot of Grant"
+            style={{ filter: `grayscale(1)` }}
+            className="w-1/2 sm:w-full"
+          />
+        </div>
       </div>
     </div>
   );

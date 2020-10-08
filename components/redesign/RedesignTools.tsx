@@ -38,7 +38,7 @@ const tools: Tool[] = [
 export const RedesignTools: React.FC = () => {
   return (
     <div>
-      <div className="container p-2">
+      <div className="container max-w-5xl p-2">
         <div className="text-5xl font-thin font-fancy">Tools</div>
         <div className="text-gray-600 leading-snug">
           My expertise is in full-stack web and mobile development, primarily
