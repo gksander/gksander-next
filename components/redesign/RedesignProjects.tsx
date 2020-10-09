@@ -52,14 +52,14 @@ const projects: Project[] = [
 export const RedesignProjects: React.FC = () => {
   return (
     <div>
-      <div className="container max-w-5xl px-2 py-4">
+      <div className="container max-w-5xl px-2 py-10">
         <div className="text-5xl font-thin font-fancy">Projects</div>
         <div className="text-gray-600">
           Here are some projects I've worked on either professionally or
           casually.
         </div>
         <div className="mb-4" />
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {projects.map(proj => (
             <div key={proj.title}>
               <div className="font-bold text-lg">{proj.title}</div>

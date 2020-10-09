@@ -38,9 +38,9 @@ const tools: Tool[] = [
 export const RedesignTools: React.FC = () => {
   return (
     <div>
-      <div className="container max-w-5xl p-2">
+      <div className="container max-w-5xl px-2 py-10">
         <div className="text-5xl font-thin font-fancy">Tools</div>
-        <div className="text-gray-600 leading-snug">
+        <div className="text-gray-600 leading-snug max-w-2xl">
           My expertise is in full-stack web and mobile development, primarily
           using <span className="text-primary-700">TypeScript and React</span>.
           I have experience using both Ruby on Rails and various{" "}

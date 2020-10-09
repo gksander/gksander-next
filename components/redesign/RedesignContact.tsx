@@ -43,11 +43,11 @@ const records: ContactRecord[] = [
 export const RedesignContact: React.FC = () => {
   return (
     <div className="bg-gray-300" id="getintouch">
-      <div className="container max-w-5xl px-2 pt-4 pb-16">
+      <div className="container max-w-5xl px-2 pt-10 pb-16">
         <div className="text-5xl font-thin font-fancy">Get in Touch!</div>
         <div className="text-gray-600">Want to share ideas? Hit me up!</div>
         <div className="mb-4" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-4">
           {records.map(rec => (
             <a
               key={rec.title}

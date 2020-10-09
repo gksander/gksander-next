@@ -9,7 +9,7 @@ export const RedesignHero: React.FC = () => {
       <div className="container max-w-5xl p-2 flex justify-between items-center">
         <div className="text-2xl font-bold">Grant Sander</div>
         <a
-          className="block flex text-gray-700 rounded px-2 py-1 cursor-pointer hover:bg-gray-300 hover:text-primary-700 transition-colors duration-200"
+          className="block flex text-gray-700 rounded px-2 py-10 cursor-pointer hover:bg-gray-300 hover:text-primary-700 transition-colors duration-200"
           href="#getintouch"
         >
           <HeartIcon width={12} />
@@ -18,7 +18,7 @@ export const RedesignHero: React.FC = () => {
       </div>
       {/* Hero container */}
       <div className="container max-w-5xl grid grid-cols-1 sm:grid-cols-3 gap-2 px-2 pt-4 items-end">
-        <div className="col-span-1 sm:col-span-2 pb-4">
+        <div className="col-span-1 sm:col-span-2 pb-10">
           <div className="text-3xl leading-8 font-fancy">
             I like using computers and problem solving to build things that make
             lives better.
