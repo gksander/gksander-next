@@ -40,17 +40,6 @@ const records: ContactRecord[] = [
   },
 ];
 
-const Link: React.FC<{ href: string }> = ({ href, children }) => (
-  <span
-    href={href}
-    className="text-lg font-bold leading-3"
-    target="_blank"
-    rel="noreferrer"
-  >
-    {children}
-  </span>
-);
-
 export const RedesignContact: React.FC = () => {
   return (
     <div className="bg-gray-300" id="getintouch">

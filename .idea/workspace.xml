@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd32b7a2-402e-4a74-b1f4-841051898312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/redesign/SocialIcons.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/redesign/RedesignContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/redesign/RedesignContact.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +109,7 @@
       <workItem from="1602119054357" duration="12097000" />
       <workItem from="1602167711384" duration="4241000" />
       <workItem from="1602182975082" duration="368000" />
-      <workItem from="1602184806441" duration="5807000" />
+      <workItem from="1602184806441" duration="6100000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1576891624888</created>
