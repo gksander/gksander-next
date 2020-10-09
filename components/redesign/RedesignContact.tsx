@@ -1,14 +1,54 @@
 import * as React from "react";
+import {
+  EmailIcon,
+  GithubIcon,
+  LinkedinIcon,
+  TwitterIcon,
+} from "./SocialIcons";
+
+type ContactRecord = {
+  title: string;
+  linkTitle: string;
+  href: string;
+  icon: typeof EmailIcon;
+};
+
+const records: ContactRecord[] = [
+  {
+    title: "On Gmail",
+    linkTitle: "As gksander93",
+    href: "mailto:gksander93@gmail.com",
+    icon: EmailIcon,
+  },
+  {
+    title: "On GitHub",
+    linkTitle: "As gksander",
+    href: "https://github.com/gksander",
+    icon: GithubIcon,
+  },
+  {
+    title: "On LinkedIn",
+    linkTitle: "As gksander",
+    href: "https://linkedin.com/in/gksander",
+    icon: LinkedinIcon,
+  },
+  {
+    title: "On Twitter",
+    linkTitle: "As gksander93",
+    href: "https://twitter.com/gksander93",
+    icon: TwitterIcon,
+  },
+];
 
 const Link: React.FC<{ href: string }> = ({ href, children }) => (
-  <a
+  <span
     href={href}
-    className="text-primary-700 hover:text-primary-800 transition-color duration-200"
+    className="text-lg font-bold leading-3"
     target="_blank"
     rel="noreferrer"
   >
     {children}
-  </a>
+  </span>
 );
 
 export const RedesignContact: React.FC = () => {
@@ -18,30 +58,27 @@ export const RedesignContact: React.FC = () => {
         <div className="text-5xl font-thin font-fancy">Get in Touch!</div>
         <div className="text-gray-600">Want to share ideas? Hit me up!</div>
         <div className="mb-4" />
-        <ul className="text-gray-600 list-disc ml-6">
-          <li>
-            Email me at{" "}
-            <Link href="mailto:gksander93@gmail.com">gksander93@gmail.com</Link>
-            .
-          </li>
-          <li>
-            I act like a professional as{" "}
-            <Link href="https://linkedin.com/in/gksander">gksander</Link> on
-            LinkedIn.
-          </li>
-          <li>
-            I commit code as{" "}
-            <Link href="https://github.com/gksander">gksander</Link> on GitHub.
-          </li>
-          <li>
-            I sometimes tweet as{" "}
-            <Link href="https://twitter.com/gksander93">gksander93</Link>.
-          </li>
-          <li>
-            I sometimes blog as{" "}
-            <Link href="https://dev.to/gksander">gksander</Link> on dev.to.
-          </li>
-        </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {records.map(rec => (
+            <a
+              key={rec.title}
+              className="flex items-center text-gray-600 hover:text-primary-700 transition-color duration-300 cursor-pointer"
+              href={rec.href}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="w-10 mr-3">
+                <rec.icon />
+              </div>
+              <div>
+                <div className="text-gray-600 ">{rec.title}</div>
+                <div className="text-lg font-bold leading-3">
+                  {rec.linkTitle}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
